@@ -1,0 +1,153 @@
+.container{
+    background-color: #ddd;
+    padding: 20px 12% 20px 12%;
+    height: 100%;
+
+    &__input {
+        margin-bottom: 20px;
+
+        &__header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            >a{
+                padding: 10px;
+                background-color: #fff;
+            }
+        }
+
+        &__title, &__subtitle{
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        &__grid{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+
+            &__name {
+                padding: 10px;
+                width: 80%;
+            }
+
+            &__button{
+                padding: 10px;
+                width: 10%;
+            }
+        }
+
+        &__fonts{
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid grey;
+            padding: 20px;
+
+            >p{
+                margin-right: 20px;
+            }
+
+            &__picker{
+            }
+        }
+        
+
+        &__changeBackground{
+            display: flex;
+            align-items: center;
+            padding: 30px;
+            background-color: #fff;
+            margin-top: 20px;
+            border: 1px solid grey;
+            justify-content: space-between;
+
+            &__image{
+                >p{
+                    margin-bottom: 10px;
+                }
+            }
+
+            &__color{
+                >p{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &__changeBackgroundLine{
+            display: flex;
+            align-items: center;
+            padding: 30px;
+            background-color: #fff;
+            margin-top: 20px;
+            border: 1px solid grey;
+
+            >div {
+                margin-left: 30px;
+                >h6{
+                    color: red;
+                }
+            }
+        }
+    }
+
+    &__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &__download {
+            padding: 10px;
+        }
+    }
+
+    &__generate{
+
+        padding: 0 60px 0 60px;
+
+
+        &__results{
+            background-color: #e8e8e8;
+            padding: 32px;
+    
+            &__head{
+                text-align: center;
+                padding-bottom: 10px;
+            }
+    
+            &__grid{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                object-fit: cover;
+                column-gap: 20px;
+                row-gap: 20px;
+    
+    
+                &__item{
+                    text-align: center;
+                    // background-color:rgb(194, 194, 194);
+                    height: 150px;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    border: 1px solid grey;
+                }
+    
+                &__itemempty{
+                    text-align: center;
+                    // background-color:rgb(194, 194, 194);
+                    opacity: 10px;
+                    height: 150px;
+                    border: 1px solid grey;
+    
+                }
+            }
+        }
+    }
+}
